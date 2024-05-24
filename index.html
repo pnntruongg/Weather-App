@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Forecast</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Circle-icons-weather.svg/2048px-Circle-icons-weather.svg.png">
+</head>
+
+<link rel="stylesheet" href="style.css">
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+
+<body>
+    <div id="location">
+    </div>
+
+    <div class="center">
+        <div>
+            <div id="myClock" class="clock" onload="showTime()">
+            </div>
+            <form action="">
+                <input type="text" id="search" placeholder="Enter location">
+            </form>
+        </div>
+
+        <div id="forecast">
+        </div>
+
+        <label class="switch">
+            <input type="checkbox" id="toggle">
+            <div class="slider round">
+                <span class="on">&#8457</span>
+                <span class="off">&#8451</span>
+            </div>
+        </label>
+
+        <div id="quote">
+            <p>“Of all the things that can boost emotions, motivation, and perceptions during a workday, the single most
+                important is making progress in meaningful work.”</p>
+        </div>
+    </div>
+</body>
+
+<!-- javascript -->
+<script src="./script.js"></script>
+
+</html>
